@@ -53,29 +53,7 @@ int main()
         adj[a].push_back(b);
         adj[b].push_back(a);
     }
-    // bool cycle = false;
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int child : adj[i])
-    //     {
-    //         if (child != i - 1)
-    //         {
-    // int leaderA = dsu_find(i);
-    // int leaderB = dsu_find(child);
-    // if (leaderA == leaderB)
-    // {
-    //     cycle = true;
-    // }
-    // else
-    // {
-    //     dsu_union_by_size(i, child);
-    // }
-    //         }
-    //     }
-    // }
-    // if (cycle)
-    //     cout << "Cycle found" << endl;
-    // else cout<<"Cycle is not found"<<endl;
+    
     vector<pair<int, int>> edgeList;
     for (int u = 0; u < n; u++)
     {
